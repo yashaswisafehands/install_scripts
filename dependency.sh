@@ -34,4 +34,4 @@ sudo apt install python3-pip -y
 
 #install tutor
 pip install "tutor[full]" --break-system-packages
-sudo ln -s /home/yashaswi/.local/bin/tutor /usr/local/bin
+sudo ln -s /home/$USER/.local/bin/tutor /usr/local/bin
