@@ -27,6 +27,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # Add current user to docker group
 sudo usermod -aG docker "$USER"
+newgrp docker
+newgrp docker
+
 
 #make the python3 and python target the same bin
 # sudo ln -s /usr/bin/python3 /usr/bin/python
