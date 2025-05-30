@@ -29,5 +29,8 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # Add user to docker group
 sudo usermod -aG docker "$USER"
+sudo systemctl enable docker
+sudo systemctl start docker
+newgrp docker
 
 echo "Docker installed. Please start a new shell or run the next script using: newgrp docker && ./install_tutor.sh"
