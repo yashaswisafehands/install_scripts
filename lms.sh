@@ -34,7 +34,7 @@ tutor local launch --non-interactive
 echo "Transferring custom Indigo theme to env/build/openedx/themes..."
 THEMES_DIR="/home/$USER/.local/share/tutor/env/build/openedx/themes"
 rm -rf "$THEMES_DIR/indigo"
-cp -r /home/$USER/Desktop/install_scripts/indigo "$THEMES_DIR/"
+cp -r /home/$USER/install_scripts/indigo "$THEMES_DIR/"
 
 echo "Building Open edX platform image with new theme..."
 tutor images build openedx
